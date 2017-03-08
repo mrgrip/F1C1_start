@@ -6,7 +6,6 @@ html {
 }
 
 .main-content {
-  background-image: url("../images/banner-landingpage.jpg");
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
 }
@@ -117,14 +116,14 @@ header .mobile {
 /* Sign Up Section */
 
 #sign-up-section {
+  background-image: url("../images/banner-landingpage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; 
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  position: relative;
-  top: 10.625rem;
-  left: 6.25rem;
-  width: 75%;
 }
 
 #sign-up-cta {
@@ -132,6 +131,9 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  position: relative;
+  top: 10.625rem;
+  left: 6.25rem;
 }
 
 #sign-up-cta .content {
@@ -209,11 +211,11 @@ header .mobile {
     height: 20rem;
   }
 
-  #sign-up-cta h1 {
+  #sign-up-cta .striking {
     font-size: 2.25rem;
   }
 
-  #sign-up-cta h2 {
+  #sign-up-cta .cursive {
     font-size: 2rem;
   }
 }
@@ -276,7 +278,11 @@ header .mobile {
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1.25rem 1rem 1.75rem 1rem;
+  }
+
+  .feature .image-container {
+    padding-bottom: 1rem;
   }
 }
 
@@ -366,7 +372,7 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
@@ -375,7 +381,7 @@ header .mobile {
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -399,7 +405,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px) {
   footer .content {
     font-size: .625rem;
   }
